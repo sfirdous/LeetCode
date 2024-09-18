@@ -35,6 +35,6 @@ int main()
     scanf("%d%d",&target,&start); // accepting target and start value from user
 
     int distance = getMinDistance(array,n,target,start); // caluculating the minimum distance
-    printf("\n%d",distance); // display the min distance
+    printf("\n%d",distance); 
 
 }
