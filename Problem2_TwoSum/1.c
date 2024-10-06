@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     int i,j;
@@ -20,5 +21,31 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
 }
 
 int main(){
+
+    int numsSize = 4;
+    int *nums = malloc(numsSize*sizeof(int));
+
+    for (int i = 0; i < numsSize; i++)
+    {
+        scanf("%d",&nums[i]);
+    }
     
+    int target = 9;
+
+    int resultSize;
+
+    int *result = twoSum(nums,numsSize,target,&resultSize);
+
+     if (result != NULL && resultSize == 2) {
+        printf("Indices: [%d, %d]\n", result[0], result[1]);
+    } else {
+        printf("No solution found.\n");
+    }
+
+    // Free the dynamically allocated memory for result
+    free(result);
+
+    return 0;
+
+
 }
