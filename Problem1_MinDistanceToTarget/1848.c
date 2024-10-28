@@ -1,16 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int getMinDistance(int* nums, int numsSize, int target, int start) { //function to get min distance
-    int index;
-    for(int i = 0 ; i < numsSize ; ++i){ //iterating over array element to find the index of target
-        if(target == nums[i]){
-            index = i; // when index of target found set it to index variable
-            break;  // get out of the loop when fist occurence of target 
+int getMinDistance(int* nums, int numsSize, int target, int start) {
+    
+    int index = 0;
+    for(int i = start;i<numsSize;++i){
+        if(nums[i] == target){
+            index = i;
+           
         }
     }
 
-    return abs(index - start); // return distance from start to target variable
+    if(target == nums[start]){
+        return 0;
+    }
+    return abs(index-start);
+    
 }
 
 void accept_array(int *nums,int n){ // function to accept values array
