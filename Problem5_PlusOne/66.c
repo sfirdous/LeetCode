@@ -12,6 +12,7 @@ void print_array(int *nums,int n){ // function to print values array
     
 }
 
+//runtime error
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
    int number = 0;
    for(int i = 0;i<digitsSize;++i){
