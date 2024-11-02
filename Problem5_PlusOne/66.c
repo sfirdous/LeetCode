@@ -16,19 +16,25 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
    int number = 0;
    for(int i = 0;i<digitsSize;++i){
     number = number*10 + digits[i]; 
+    printf("number: %d\n",number);
    }
 
    number += 1;
+   printf("number: %d\n",number);
    int number2 = number;
-    int count =0 ;
+    printf("number2: %d\n",number2);
+    int count = 0 ;
    while(number2!=0){
     number2/=10;
     count++;
+    printf("count: %d\n",count);
    }
 
+   printf("count: %d\n",count);
    int *plusDigits = malloc(count*sizeof(int));
-   for(int i = count; i >= 0;--i){
+   for(int i = count-1; i >= 0;--i){
         plusDigits[i] = number%10;
+         printf("plusDigits[%d]: %d\n",i,plusDigits[i]);
         number /= 10; 
    }
 
@@ -41,7 +47,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 int main()
 {
 
-    int numsSize = 3;
+    int numsSize = 1;
     int *nums = malloc(numsSize*sizeof(int));
 
     for (int i = 0; i < numsSize; i++)
