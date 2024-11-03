@@ -36,7 +36,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
         plusOne = calloc(digitsSize+1,sizeof(int));
         plusOne[digitsSize] = 1;
         int j;
-        for (int i = digitsSize-1, j = digitsSize; i >= 0,j>=0; --i,--j)
+        for (int i = digitsSize-1, j = digitsSize; i >= 0 && j>=0; --i,--j)
         {
             // printf("digits[%d]: %d,plusOne[%d]: %d,carry: %d\n",i,digits[i],j,plusOne[j],carry);
             sum = digits[i]+plusOne[j]+carry;
