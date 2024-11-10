@@ -20,37 +20,9 @@ int searchInsert(int* nums, int numsSize, int target) {
         }
     
     }
+    return begin
 
     
-int searchInsert(int* nums, int numsSize, int target) {
-    
-    int begin = 0,end = numsSize-1;
-    int   mid;
-   
-    while(begin<end)
-    {
-        mid = (begin+end)/2;
-        // printf("%d\n",mid);
-        if(nums[mid] == target){
-            printf("found\n");
-            return mid;
-
-        }
-        if(nums[mid] < target){
-            begin = mid + 1;
-        }else{
-            end = mid - 1;
-        }
-    
-    }
-
-    int i = 0;
-    while((nums[i] < target) && (i<=numsSize)) //works for the case that was not working on leet code but fails for other case
-    {
-        i++;
-    }
-    return i;
-}
 }
 
 void accept_array(int *nums,int n){ // function to accept values array
