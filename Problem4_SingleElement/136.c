@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<stdlib.h>
+
 int singleNumber(int* nums, int numsSize) {
 
     if(numsSize>1){
@@ -12,4 +15,9 @@ int singleNumber(int* nums, int numsSize) {
     return nums[single]; 
     }
     return nums[0];
+}
+
+int main()
+{
+  
 }
