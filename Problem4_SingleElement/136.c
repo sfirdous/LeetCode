@@ -19,5 +19,8 @@ int singleNumber(int* nums, int numsSize) {
 
 int main()
 {
-  
+  int n;
+  print("Enter the size of array\n");
+  scanf("%d",&n);
+  int *nums = malloc(n*sizeof(int));
 }
