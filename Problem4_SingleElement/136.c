@@ -23,4 +23,7 @@ int main()
   print("Enter the size of array\n");
   scanf("%d",&n);
   int *nums = malloc(n*sizeof(int));
+  
+  int result = singleNumber(nums,n);
+
 }
