@@ -25,5 +25,6 @@ int main()
   int *nums = malloc(n*sizeof(int));
   
   int result = singleNumber(nums,n);
+  printf("Single Element in array is %d\n",result);
 
 }
