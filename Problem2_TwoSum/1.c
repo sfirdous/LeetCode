@@ -30,7 +30,9 @@ int main(){
         scanf("%d",&nums[i]);
     }
     
-    int target = 9;
+    int target;
+    printf("Enter target\n");
+    scanf("%d",&target);
 
     int resultSize;
 
