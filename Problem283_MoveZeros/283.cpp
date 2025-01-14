@@ -20,19 +20,15 @@ public:
 
     void moveZeroesInPlace(vector<int>& nums) {
         int size = nums.size();
-        int j;
+        int index = 0;
+        int temp;
         for(int i = 0 ; i < size ; ++i){
-            if(nums[i] == 0){
-                j = i+1;
-                while(j < size){
-                    if(nums[j] != 0){
-                        swap(nums[i],nums[j]);
-                        break;
-                    }
-                    j++;
-                }
+            if(nums[i] != 0){
+                swap(nums[i],nums[index]);
+                
+                index++;
             }
-        }    
-
+        }
+ 
     }
 };
