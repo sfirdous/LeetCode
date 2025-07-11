@@ -10,6 +10,9 @@ This repository contains  solutions to various problems from [LeetCode](https://
 ```bash
 LeetCode/
 
+
+├── 📘 DailyQuestions/
+
 ├── 📘 ISSC75-2025/
 │   ├── 🟢 Easy/
 │   └── 🟡 Medium/
